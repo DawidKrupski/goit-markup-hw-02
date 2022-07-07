@@ -120,11 +120,13 @@ h5 {
 .order-button:hover {
   background: var(--focus-color);
   color: var(--button-focus);
+  cursor: pointer;
 }
 .button:hover,
 .button:focus {
   color: var(--focus-color);
   background: var(--button-focus);
+  cursor: pointer;
 }
 .button > span {
   font-family: "Roboto";
