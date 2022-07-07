@@ -1,0 +1,162 @@
+body {
+  font-family: "roboto", sans-serif;
+  background: var(--background);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: var(--text);
+  letter-spacing: 0.03em;
+  line-height: 24px;
+  position: absolute;
+}
+:root {
+  --main-color: #2196f3;
+  --background: #ffffff;
+  --secound-background: #2f303a;
+  --thid-background: #f5f4fa;
+  --text: #212121;
+  --secound-text: #ffffff;
+  --focus-color: #ffffff;
+  --button-focus: #2196f3;
+  --link-focus: #2196f3;
+  --info-color: #757575;
+  --article-text: #757575;
+  --footer-kontakt: rgba(255, 255, 255, 0.6);
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+a:focus,
+a:hover {
+  color: var(--link-focus);
+}
+
+.logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+.first-word {
+  color: var(--main-color);
+}
+.secound-word {
+  color: var(--text);
+}
+.third-word {
+  color: var(--secound-text);
+}
+.mail,
+.tel {
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--info-color);
+}
+.general-menu {
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.slogan-space {
+  background: var(--secound-background);
+}
+h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--secound-text);
+}
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+h4 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+h5 {
+  font-weight: 700;
+  line-height: 16px;
+  font-size: 14px;
+}
+
+.order-button {
+  font-family: "Roboto";
+  font-style: normal;
+  background: var(--main-color);
+  color: var(--secound-text);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  width: 200px;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.order-button:focus,
+.order-button:hover {
+  background: var(--focus-color);
+  color: var(--button-focus);
+}
+.button:hover,
+.button:focus {
+  color: var(--focus-color);
+  background: var(--button-focus);
+}
+.button > span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+}
+.article > li > p {
+  color: var(--article-text);
+}
+.team-description {
+  background: var(--thid-background);
+}
+.team-description > ul > li > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--info-color);
+}
+footer {
+  background: var(--secound-background);
+}
+footer > address {
+  color: var(--secound-text);
+}
+footer > a {
+  color: var(--footer-kontakt);
+}
+.expiriences-description > ul > li > p {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--info-color);
+}
