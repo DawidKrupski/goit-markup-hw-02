@@ -1,14 +1,3 @@
-body {
-  font-family: "roboto", sans-serif;
-  background: var(--background);
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-  color: var(--text);
-  letter-spacing: 0.03em;
-  line-height: 24px;
-  position: absolute;
-}
 :root {
   --main-color: #2196f3;
   --background: #ffffff;
@@ -23,26 +12,26 @@ body {
   --article-text: #757575;
   --footer-kontakt: rgba(255, 255, 255, 0.6);
 }
-li {
-  list-style: none;
-}
-a {
-  text-decoration: none;
+body {
+  font-family: "roboto", "raleway", sans-serif;
+  background: var(--background);
+  font-size: 14px;
   color: var(--text);
+  letter-spacing: 0.03em;
+  line-height: 24px;
+  position: absolute;
 }
 
-a:focus,
-a:hover {
-  color: var(--link-focus);
-}
+/* ====================HEADER-START==================== */
+
+/* ----------LOGO-START---------- */
 
 .logo {
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 .first-word {
   color: var(--main-color);
@@ -53,23 +42,54 @@ a:hover {
 .third-word {
   color: var(--secound-text);
 }
+
+/* ----------LOGO-END---------- */
+
+/* ----------MENU-START---------- */
+
+.general-menu {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  list-style: none;
+}
+.menu-items {
+  text-decoration: none;
+  color: var(--text);
+}
+.menu-items:focus,
+.menu-items:hover {
+  color: var(--link-focus);
+}
 .mail,
 .tel {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--info-color);
+  text-decoration: none;
 }
-.general-menu {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+.mail:hover,
+.mail:focus,
+.tel:hover,
+.tel:focus {
+  color: var(--link-focus);
 }
+
+/* ----------MENU-END---------- */
+
+/* ====================HEADER-END==================== */
+
+/* ------------------------------------------------------------------------------------ */
+
+/* ====================MAIN-START==================== */
+
+/* ----------SLOGAN-START---------- */
 
 .slogan-space {
   background: var(--secound-background);
 }
-h1 {
+.slogan-text {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -78,33 +98,7 @@ h1 {
   text-transform: uppercase;
   color: var(--secound-text);
 }
-h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-h3 {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-h4 {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-}
-h5 {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-}
-
 .order-button {
-  font-family: "Roboto";
-  font-style: normal;
   background: var(--main-color);
   color: var(--secound-text);
   font-weight: 700;
@@ -112,15 +106,109 @@ h5 {
   line-height: 1.89;
   width: 200px;
   height: 50px;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-}
-.order-button:focus,
-.order-button:hover {
-  background: var(--focus-color);
-  color: var(--button-focus);
   cursor: pointer;
+}
+
+/* ----------SLOGAN-END---------- */
+
+/* ----------ARTICLE-START---------- */
+
+.article-list {
+  list-style: none;
+}
+.article-header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.article-list > li > p {
+  color: var(--article-text);
+}
+
+/* ----------ARTICLE-END---------- */
+
+/* ----------WORKING-ON-START---------- */
+
+.secoundary-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.working-list {
+  list-style: none;
+}
+
+/* ----------WORKING-ON-END---------- */
+
+/* ----------TEAM-START---------- */
+
+.team-description {
+  background: var(--thid-background);
+}
+.team-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team-list {
+  list-style: none;
+}
+.team-members {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.team-description > ul > li > p {
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--info-color);
+}
+
+/* ----------TEAM-END---------- */
+
+/* ====================MAIN-END==================== */
+
+/* ------------------------------------------------------------------------------------ */
+
+/* ====================FOOTER-START==================== */
+
+footer {
+  background: var(--secound-background);
+}
+footer > address {
+  color: var(--secound-text);
+  font-style: normal;
+}
+.footer-mail,
+.footer-tel {
+  color: var(--footer-kontakt);
+  text-decoration: none;
+}
+.footer-mail:focus,
+.footer-mail:hover,
+.footer-tel:focus,
+.footer-tel:hover {
+  color: var(--link-focus);
+}
+
+/* ====================FOOTER-END==================== */
+
+/* ====================================INDEX-END====================================== */
+/* ((((((((((((((((((((((((((((((((((((((((((((())))))))))))))))))))))))))))))))))))))))))))) */
+/* ====================================PORTFOLIO-START====================================== */
+
+/* ====================MAIN-START==================== */
+
+/* ----------SECOUND-MENU-START---------- */
+
+.secound-menu-list {
+  list-style: none;
 }
 .button:hover,
 .button:focus {
@@ -130,35 +218,34 @@ h5 {
 }
 .button > span {
   font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
 }
-.article > li > p {
-  color: var(--article-text);
+
+/* ----------SECOUND-MENU-END---------- */
+
+/* ----------EXPIRIENCES-START---------- */
+
+.expiriences-list {
+  list-style: none;
 }
-.team-description {
-  background: var(--thid-background);
-}
-.team-description > ul > li > p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19x;
-  color: var(--info-color);
-}
-footer {
-  background: var(--secound-background);
-}
-footer > address {
-  color: var(--secound-text);
-}
-footer > a {
-  color: var(--footer-kontakt);
+.experience-header {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 .expiriences-description > ul > li > p {
   font-size: 16px;
   line-height: 1.89;
   color: var(--info-color);
 }
+
+/* ----------EXPIERIENCES-END---------- */
+
+/* ====================MAIN-END==================== */
+
+/* ====================================PORTFOLIO-END====================================== */
+/* ((((((((((((((((((((((((((((((((((((((((((((())))))))))))))))))))))))))))))))))))))))))))) */
